@@ -1,0 +1,55 @@
+
+{
+  "private": true,
+  "scripts": {
+	"postinstall": "npx wagmi generate",
+    "dev": "next dev",
+    "build": "next build",
+    "bs": "next build && next start",
+    "start": "next start",
+    "sync": "npm exec create-atlas-dapp sync"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.2",
+    "@chakra-ui/react": "^2.8.0",
+    "@chakra-ui/theme-tools": "^2.0.2",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.9.0",
+    "@metamask/detect-provider": "^1.2.0",
+    "@rainbow-me/rainbowkit": "^1.0.8",
+    "apk": "^1.2.0",
+    "axios": "^0.27.2",
+    "ethers": "^5.7.2",
+    "framer-motion": "^6.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
+    "metamask-react": "^2.4.0",
+    "moment": "^2.29.4",
+    "next": "latest",
+    "react": "^18.2.0",
+    "react-code-blocks": "^0.0.9-0",
+    "react-dom": "^18.2.0",
+    "react-highlight": "^0.15.0",
+    "react-icons": "^4.4.0",
+    "react-markdown": "^8.0.5",
+    "react-media": "^1.10.0",
+    "react-query": "^3.39.2",
+    "react-spinners": "^0.13.8",
+    "react-terminal": "^1.3.0",
+    "recharts": "^2.2.0",
+    "universal-cookie": "^4.0.4",
+    "viem": "^1.5.4",
+    "wagmi": "^1.3.9",
+    "zustand": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/node": "^18.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@wagmi/cli": "^1.3.0",
+    "typescript": "^5.0.4",
+	"create-atlas-dapp": "^1.0.6"
+  }
+}
+

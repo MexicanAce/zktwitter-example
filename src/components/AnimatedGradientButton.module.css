@@ -1,0 +1,62 @@
+:root.bg {
+    --left-color: red; /* rgba(5, 67, 167, 0.89) */
+    --right-color: black; /* rgba(6, 95, 239, 0.89) */
+    --br: 5px;
+}
+
+.bg {
+    border-radius: var(--br);
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 0.9rem;
+    padding: 6px 10px;
+    font-weight: 500;
+    line-height: 1;
+    width: 100%;
+}
+
+.bg {
+    position: relative;
+    background: linear-gradient(
+        45deg,
+        var(--left-color),
+        var(--right-color)
+    );
+    z-index: 1;
+}
+
+.bg::before {
+    border-radius: var(--br);
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+        35deg,
+        var(--right-color),
+        var(--left-color)
+    );
+    z-index: -1;
+    transition: opacity 0.2s linear;
+    opacity: 0;
+}
+
+.bg:hover::before {
+    opacity: 1;
+}
+
+.bg:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    background: linear-gradient(35deg, #505050, #808080);
+}
+
+.bg:disabled::before {
+    background-image: linear-gradient(35deg, #505050, #808080);
+}

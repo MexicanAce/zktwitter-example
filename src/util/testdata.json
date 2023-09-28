@@ -1,0 +1,46 @@
+{
+    "0": {
+        "timestamp": 12,
+        "value": 82.0
+    },
+    "1": {
+        "timestamp": 13,
+        "value": 23.3
+    },
+    "2": {
+        "timestamp": 14,
+        "value": 120.2
+    },
+    "3": {
+        "timestamp": 15,
+        "value": 22.1
+    },
+    "4": {
+        "timestamp": 16,
+        "value": 33.0
+    },
+    "5": {
+        "timestamp": 17,
+        "value": 63.9
+    },
+    "6": {
+        "timestamp": 18,
+        "value": 1.8
+    },
+    "7": {
+        "timestamp": 19,
+        "value": 81.7
+    },
+    "8": {
+        "timestamp": 20,
+        "value": 1.6
+    },
+    "9": {
+        "timestamp": 21,
+        "value": 100.5
+    },
+    "10": {
+        "timestamp": 22,
+        "value": 84.4
+    }
+}
